@@ -19,7 +19,7 @@ class DEX_YCB(torch.utils.data.Dataset):
     def __init__(self, transform, data_split):
         self.transform = transform
         self.data_split = data_split if data_split == 'train' else 'test'
-        self.root_dir = osp.join('..', 'data', 'DEX_YCB', 'data')
+        self.root_dir = osp.join('/home/eksan/temp_data/hand/handOCC', 'DEX_YCB', 'data')
         self.annot_path = osp.join(self.root_dir, 'annotations')
         self.root_joint_idx = 0
 

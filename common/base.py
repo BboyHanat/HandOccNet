@@ -12,10 +12,12 @@ from logger import colorlogger
 from torch.nn.parallel.data_parallel import DataParallel
 from config import cfg
 from model import get_model
+from HO3D import HO3D
+from DEX_YCB import DEX_YCB
 
 # dynamic dataset import
-exec('from ' + cfg.trainset + ' import ' + cfg.trainset)
-exec('from ' + cfg.testset + ' import ' + cfg.testset)
+# exec('from ' + cfg.trainset + ' import ' + cfg.trainset)
+# exec('from ' + cfg.testset + ' import ' + cfg.testset)
 
 class Base(object):
     __metaclass__ = abc.ABCMeta

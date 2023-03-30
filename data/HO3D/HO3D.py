@@ -19,7 +19,7 @@ class HO3D(torch.utils.data.Dataset):
     def __init__(self, transform, data_split):
         self.transform = transform
         self.data_split = data_split if data_split == 'train' else 'evaluation'
-        self.root_dir = osp.join('..', 'data', 'HO3D', 'data')
+        self.root_dir = osp.join('/home/eksan/temp_data/hand/handOCC', 'HO3D', 'data')
         self.annot_path = osp.join(self.root_dir, 'annotations')
         self.root_joint_idx = 0
 
